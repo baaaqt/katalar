@@ -11,3 +11,7 @@ class UpdatedAtMixin:
     updated_at: Mapped[datetime] = mapped_column(
         default=datetime.now, onupdate=datetime.now
     )
+
+
+class CreatedAtUpdatedAtMixin(CreatedAtMixin, UpdatedAtMixin):
+    pass
