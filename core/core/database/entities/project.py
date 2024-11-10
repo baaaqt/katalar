@@ -17,3 +17,7 @@ class Project(IDAsUUIDStringMixin, Entity):
         secondary="projects_tags",
         lazy="joined",
     )
+
+    @property
+    def tag_names(self) -> list[str]:
+        return [tag.name for tag in self.tags]
