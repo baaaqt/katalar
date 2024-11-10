@@ -1,9 +1,9 @@
 from sqlalchemy import String, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from core.core.database.entities.tag import Tag
 from core.database.entities.base import Entity
 from core.database.entities.mixins.id import IDAsUUIDStringMixin
+from core.database.entities.tag import Tag
 
 
 class Project(IDAsUUIDStringMixin, Entity):

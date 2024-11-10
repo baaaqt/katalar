@@ -1,7 +1,7 @@
 from sqlalchemy import ForeignKey, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column
 
-from core.core.database.entities.base import Entity
+from core.database.entities.base import Entity
 
 
 class ProjectTag(Entity):

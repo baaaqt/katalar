@@ -1,8 +1,8 @@
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column
 
-from core.core.database.entities.base import Entity
-from core.core.database.entities.mixins.id import IDAsUUIDStringMixin
+from core.database.entities.base import Entity
+from core.database.entities.mixins.id import IDAsUUIDStringMixin
 
 
 class TagToken(Entity, IDAsUUIDStringMixin):
