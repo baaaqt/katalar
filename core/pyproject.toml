@@ -2,12 +2,13 @@
 name = "core"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Bakyt Niiazaliev <bakyt.worker@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
 sqlalchemy = "^2.0.36"
+pydantic = "^2.9.2"
 
 
 [tool.poetry.group.dev.dependencies]
