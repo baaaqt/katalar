@@ -10,8 +10,8 @@ from core.database.entities.mixins.datetimesmixin import CreatedAtUpdatedAtMixin
 class User(Entity, CreatedAtUpdatedAtMixin):
     __tablename__ = "users"
 
-    username: Mapped[str] = mapped_column(unique=True, index=True)
-    email: Mapped[str] = mapped_column(unique=True, index=True)
+    username: Mapped[str] = mapped_column(String(length=30), unique=True, index=True)
+    email: Mapped[str] = mapped_column(String(length=255), unique=True, index=True)
     password: Mapped[str] = mapped_column()
 
     name: Mapped[str] = mapped_column(String(length=500))
