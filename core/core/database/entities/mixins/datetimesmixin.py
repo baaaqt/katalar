@@ -13,5 +13,4 @@ class UpdatedAtMixin:
     )
 
 
-class CreatedAtUpdatedAtMixin(CreatedAtMixin, UpdatedAtMixin):
-    pass
+class CreatedAtUpdatedAtMixin(CreatedAtMixin, UpdatedAtMixin): ...
