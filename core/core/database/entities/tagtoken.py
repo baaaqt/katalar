@@ -6,5 +6,7 @@ from core.database.entities.mixins.id import IDAsUUIDStringMixin
 
 
 class TagToken(Entity, IDAsUUIDStringMixin):
+    __tablename__ = "tag_tokens"
+
     tag_name: Mapped[str] = mapped_column(ForeignKey("tags.name"), primary_key=True)
     token: Mapped[str]
