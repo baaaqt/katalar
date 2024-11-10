@@ -20,7 +20,8 @@ class ProjectRepositoryBase(
 
 
 class RecordRepositoryBase(
-    IDEntityRepository[Record, str], PaginationRepository[Record]
+    IDEntityRepository[Record, str],
+    PaginationRepository[Record],
 ):
     entity = Record
 
